@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Посты
+{% endblock %}
+{% block content %}
+    <div class="features">
+        <h1>Новости TriF</h1>
+        {% if post %}
+            {% for el in post %}
+                <div class = 'alert alert-warning'>
+                    <h3>{{ el.title }}</h3>
+                    <p>{{ el.anons }}</p>
+                    <a href="{% url 'posts-detail' el.id %}" class="btn btn-warning">Читать детальнее</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>У вас нету записей</p>
+        {% endif %}
+     </div>
+{% endblock %}
