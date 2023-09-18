@@ -10,6 +10,14 @@
     <link rel="shortcut icon" href="{% static 'main/img/ЛогоТриф.png' %}" type="image/x-icon">
 </head>
 <body>
+    <ul class="users">
+        <li>
+            User: {{ user }}
+        </li>
+        <li class="list-group-item">
+            <a href="{% url 'user' %}"><button type="button" class="btn btn-primary">Вход в аккаунт</button></a>
+        </li>
+    </ul>
     <aside>
         <img src="{% static 'main/img/ЛогоТриф.png'%}" alt="TriF">
         <span class="logo">ТриФ</span>
@@ -17,7 +25,7 @@
             <a href="{% url 'home' %}"><li><i class="fa-solid fa-house"></i> Главная </li></a>
             <a href="{% url 'about' %}"><li><i class="fa-solid fa-medal"></i> Тренера </li></a>
             <a href=""><li><i class="fa-solid fa-heart-pulse"></i> Программа тренировки </li></a>
-            <a href="{% url 'posts_home' %}"><li><i class="fa-solid fa-heart-pulse"></i> Посты </li></a>
+            <a href="{% url 'posts_home' %}"><li><i class="fa-solid fa-heart-pulse"></i> Программа тренировки </li></a>
             <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Добавить запись</button></li></a>
         </ul>
     </aside>
@@ -29,59 +37,7 @@
 
     {# адаптивная сетка #}
 
-    {# основа центра сайта #}
-    <div class="main">
-
-    <h1>ТРИ Ф</h1>
-    <hr>
-
-    <h2>Основная информация</h2>
-    <p></p>
-
-    {# портфолио  #}
-    <div class="row">
-      <div class="column">
-        <div class="content">
-          <img src="{% static 'main/img/hend.jpg'%}" alt="инструктора" style="width:100%">
-          <h3>Инструктора</h3>
-          <p>3456</p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-        <img src="{% static 'main/img/залы.jpg'%}" alt="Залы" style="width:100%">
-          <h3>Залы</h3>
-          <p>3456</p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-        <img src="{% static 'main/img/Schedule.jpg'%}" alt="Расписание" style="width:100%; height: 239px;">
-          <h3>Расписание</h3>
-          <p>3456</p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-        <img src="{% static 'main/img/кубки.jpg'%}" alt="Цены" style="width:100%">
-          <h3>Цены</h3>
-          <p>3456</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="content">
-      <img src="{% static 'main/img/dance_class3.jpg'%}" alt="info" style="width:100%">
-      <h3>Информация о групповых занятий</h3>
-      <p>3151235</p>
-      <p>35463456</p>
-    </div>
-
-    </div>
-    {# портфолио  #}
-
-    {# адаптивная сетка #}
-
+    {# Нижняя информация  #}
     <div class="footer">
         <p>Контактная информация</p>
         <a href="https://www.google.com/maps/place/%D0%9A%D0%BB%D1%83%D0%B1+%22%D0%A2%D1%80%D0%B8+%D0%A4%22/@53.8714866,30.3493835,17.75z/data=!4m15!1m8!3m7!1s0x46d0522f897dabff:0x45bbcb72d23f252!2z0J_Rg9GI0LrQuNC90YHQutC40Lkg0L_RgNC-0YHQvy4gMzYsINCc0L7Qs9C40LvRkdCyIDIxMjAwMg!3b1!8m2!3d53.8712596!4d30.3489051!16s%2Fg%2F11c1gk4q28!3m5!1s0x46d05184657c87bd:0x1dc932478aca251f!8m2!3d53.8715202!4d30.3494672!16s%2Fg%2F11bxc6gzw_?entry=ttu" target="_blank" class="address"> г. Могилев. ул.Пушкинский 36а</a>
@@ -90,5 +46,6 @@
             73 59 00 (городской)
         </p>
     </div>
+    {# Нижняя информация  #}
 </body>
 </html>

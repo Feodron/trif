@@ -95,66 +95,18 @@ form {
 }
 /*нижняя информация*/
 
-/*адаптивная сетка*/
-* {
-    box-sizing: border-box;
-}
-
-body {
-    padding: 20px;
-    font-family: Arial;
-}
-
-/* Center website */
-.main {
-    max-width: 1000px;
+/*Аккаунт*/
+.profile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
     margin: auto;
+    text-align: center;
 }
 
-h1 {
-    font-size: 50px;
-    word-break: break-all;
-}
+/*Аккаунт*/
 
-.row {
-    margin: 8px -16px;
+/*Авторизация*/
+.users {
+    float: right;
 }
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-    padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 25%;
-}
-
-/* Clear floats after rows */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Content */
-.content {
-    padding: 10px;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-    .column {
-        width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}
-/*адаптивная сетка*/
+/*Авторизация*/
