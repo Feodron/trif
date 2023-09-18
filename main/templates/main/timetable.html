@@ -1,0 +1,201 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Расписание
+{% endblock %}
+
+{% block content %}
+
+    <table class="table table-dark"  >
+        <tbody>
+            <tr>
+                <td>Понедельник</td>
+                <td>Вторник</td>
+                <td>Среда</td>
+                <td>Четверг</td>
+                <td>Пятница</td>
+                <td>Суббота</td>
+                <td>Воскресенье</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="{% url 'posts-detail' 1  %}" class="table_a">
+                        Power+
+                        #силовой тренинг
+                        (17.30)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 3  %}" class="table_a">
+                        BodySculptor
+                        #силовой тренинг
+                        (17.30)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 4  %}" class="table_a2">
+                        Танц класс
+                        #стрип
+                        (17.20)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 1  %}" class="table_a">
+                        Power+
+                        #силовой тренинг
+                        (17.30)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 5  %}" class="table_a3">
+                        ДФС
+                        #продолжающие
+                        (17.30)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 6  %}" class="table_a4">
+                        BodyBalance
+                        #тренинг
+                        (11.30)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 5  %}" class="table_a3">
+                        ДФС
+                        #начинающие
+                        (12.00)
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="{% url 'posts-detail' 2  %}" class="table_a">
+                        Power motion
+                        #силовой тренинг
+                        (18.10)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 5  %}" class="table_a3">
+                        ДФС
+                        #продолжающие
+                        (18.10)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 7  %}" class="table_a5">
+                        Afro
+                        #силовые танцы
+                        (18.10)
+                    </a>
+                </td>
+                <td><a href="{% url 'posts-detail' 2  %}" class="table_a">
+                        Power motion
+                        #силовой тренинг
+                        (18.10)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 5  %}" class="table_a3">
+                        ДФС
+                        #начинающие
+                        (18.00)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 8  %}" class="table_a6">
+                        Boxcing
+                        #силовое кардио
+                        (12.10)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 5  %}" class="table_a3">
+                        ДФС
+                        #продолжающие
+                        (13.00)
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="{% url 'posts-detail' 9  %}" class="table_a7">
+                        Dance aerobica
+                        #Кардио
+                        (19.10)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 4  %}" class="table_a2">
+                        Танц класс
+                        #стрип
+                        (20.10)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 8  %}" class="table_a6">
+                        Boxcing
+                        #силовое кардио
+                        (19.10)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 9  %}" class="table_a7">
+                        Dance aerobica
+                        #Кардио
+                        (19.10)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 3  %}" class="table_a">
+                        BodySculptor
+                        #силовой тренинг
+                        (19.30)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 7  %}" class="table_a5">
+                        Afro
+                        #силовые танцы
+                        (13.10)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 5  %}" class="table_a3">
+                        Танц класс
+                        #MixDance
+                        (14.00)
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="{% url 'posts-detail' 4  %}" class="table_a2">
+                        Танц класс
+                        #стрип
+                        (20.10)
+                    </a>
+                </td>
+                <td></td>
+                <td>
+                    <a href="{% url 'posts-detail' 10  %}" class="table_a8">
+                        Strechroll
+                        #тренинг
+                        (20.10)
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'posts-detail' 4  %}" class="table_a2">
+                        Танц класс
+                        #стрип
+                        (20.10)
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

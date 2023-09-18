@@ -14,3 +14,5 @@ def about(request):
     return render(request, 'main/about.html')
 
 
+def timetable(request):
+    return render(request, 'main/timetable.html')

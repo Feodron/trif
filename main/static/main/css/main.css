@@ -7,7 +7,7 @@ aside{
     background: #969595;
     width: 20%;
     padding: 2.5%;
-    height: 100vh;
+    height: 250vh;
     color: #4d4d4d;
     border-right: 5px solid #4d4d4d;
 }
@@ -110,3 +110,56 @@ form {
     float: right;
 }
 /*Авторизация*/
+/*Таблица*/
+table.table-dark{
+	width: 65%;
+	border-collapse:collapse;
+	border-spacing:0;
+	height: auto;
+    background-color: #6566a6;
+}
+table.iksweb,table.iksweb td, table.iksweb th {
+	border: 1px solid #595959;
+}
+table.iksweb td,table.iksweb th {
+	padding: 3px;
+	width: 30px;
+	height: 35px;
+}
+table.iksweb th {
+	background: #347c99;
+	color: #fff;
+	font-weight: normal;
+}
+table .table_a {
+    color: #d9631e;
+}
+
+table .table_a2 {
+    color: #e3a427;
+}
+
+table .table_a3 {
+    color: #ab268a;
+}
+
+table .table_a4 {
+    color: #361ba1;
+}
+
+table .table_a5 {
+    color: #1ba128;
+}
+
+table .table_a6 {
+    color: #d10d0d;
+}
+
+table .table_a7 {
+    color: #0dc1d1;
+}
+
+table .table_a8 {
+    color: #a30dd1;
+}
+/*Таблица*/

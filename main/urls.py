@@ -6,5 +6,6 @@ from . import views
 urlpatterns = [
     path('', views.index, name='home'),
     path('about', views.about, name='about'),
-    path('users', TemplateView.as_view(template_name='user_auth.html'), name='user')
+    path('users', TemplateView.as_view(template_name='user_auth.html'), name='user'),
+    path('timetable', views.timetable, name='timetable')
 ]
