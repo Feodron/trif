@@ -1,12 +1,14 @@
 {% extends 'main/layout.html' %}
+{% load static %}
 
 {% block title %}
-    {{ title }}
+
 {% endblock %}
 {% block content %}
-    <div class="features">
-        <h1>{{ title }}</h1>
-        <p>Потом добавим</p>
-        <button class="btn btn-warning"> на страницу про нас</button>
-    </div>
+        <ul>
+            <a href="{% url 'about' %}"><li> Тренера </li></a>
+            <a href="{% url 'timetable' %}"><li> Расписание </li></a>
+            <a href="{% url 'posts_home' %}"><li> Программа тренировки </li></a>
+            <a href="{% url 'shop:product_list' %}"><li> Магазин </li></a>
+        </ul>
 {% endblock %}

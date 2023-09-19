@@ -18,6 +18,18 @@
             <a href="{% url 'user' %}"><button type="button" class="btn btn-primary">Вход в аккаунт</button></a>
         </li>
     </ul>
+    <div class="cart">
+        {% with total_items=cart|length %}
+            {% if cart|length > 0 %}
+                В корзине
+                <a href="{% url 'cart:cart_detail' %}">
+                {{ total_items }} шт ,${{ cart.get_total_proce }}
+                </a>
+                {% else %}
+                Пустая корзина
+            {% endif %}
+        {% endwith %}
+    </div>
     <aside>
         <img src="{% static 'main/img/ЛогоТриф.png'%}" alt="TriF">
         <span class="logo">ТриФ</span>
@@ -26,6 +38,7 @@
             <a href="{% url 'about' %}"><li><i class="fa-solid fa-medal"></i> Тренера </li></a>
             <a href="{% url 'timetable' %}"><li><i class="bi bi-arrow-return-right"></i> Расписание </li></a>
             <a href="{% url 'posts_home' %}"><li><i class="fa-solid fa-heart-pulse"></i> Программа тренировки </li></a>
+            <a href="{% url 'shop:product_list' %}"><li><i class="bi bi-bag"></i> Магазин </li></a>
             <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Добавить запись</button></li></a>
         </ul>
     </aside>
