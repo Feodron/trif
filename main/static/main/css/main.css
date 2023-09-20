@@ -356,10 +356,10 @@ ul.errorlist {
 }
 
 .product-list .item {
-    width:10%;
-    float:left;
-    text-align:left;
-    line-height:1.2;
+    margin-bottom: 40px;
+    width: 30%;
+    float: left;
+    text-align: left;
 }
 
 .product-detail {
