@@ -2,13 +2,12 @@
 {% load static %}
 
 {% block title %}
-
+    Главная страница
 {% endblock %}
 {% block content %}
-        <ul>
-            <a href="{% url 'about' %}"><li> Тренера </li></a>
-            <a href="{% url 'timetable' %}"><li> Расписание </li></a>
-            <a href="{% url 'posts_home' %}"><li> Программа тренировки </li></a>
-            <a href="{% url 'shop:product_list' %}"><li> Магазин </li></a>
-        </ul>
+    <h1>Главная страница</h1>
+    <a href="{% url 'about' %}" class="a_text"> Тренера </a>
+    <a href="{% url 'timetable' %}" class="a_text"> Расписание </a>
+    <a href="{% url 'posts_home' %}" class="a_text"> Программа тренировки </a>
+    <a href="{% url 'shop:product_list' %}" class="a_text"> Магазин </a>
 {% endblock %}

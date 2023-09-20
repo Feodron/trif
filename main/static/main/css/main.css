@@ -240,6 +240,7 @@ thead th, tbody tr.total {
 
 table.cart {
     margin-bottom:40px;
+    width: 20%;
 }
 
 table.cart img {
@@ -355,16 +356,10 @@ ul.errorlist {
 }
 
 .product-list .item {
-    width:25%;
-    padding:10px 20px 10px 0;
+    width:10%;
     float:left;
-    text-align:center;
+    text-align:left;
     line-height:1.2;
-}
-
-.product-list .item img {
-    width:100%;
-    margin-bottom:8px;
 }
 
 .product-detail {
@@ -375,12 +370,6 @@ ul.errorlist {
     color:#333;
     font-size:28px;
     font-weight:bold;
-}
-
-.product-detail img {
-    width:40%;
-    float:left;
-    padding:0 20px 20px 0;
 }
 
 .product-detail h1 {
@@ -500,5 +489,10 @@ form div.field {
 }
 /*Магазин*/
 /*Сетка*/
-.a_text
+.a_text{
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    width: 20px;
+}
 /*Сетка*/
