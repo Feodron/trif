@@ -13,6 +13,7 @@
         <form action="{% url "cart:cart_add" product.id %}" method="post">
             {{ cart_product_form }}
             {% csrf_token %}
+            <img src="{% static 'main/img/leg.jpg' %}" alt="">
             <input type='submit' value="В корзину">
         </form>
     {{ product.description|linebreaks }}

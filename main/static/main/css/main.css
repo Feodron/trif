@@ -109,6 +109,32 @@ form {
 .users {
     float: right;
 }
+
+.login_a {
+    position: absolute;
+    right: 25%;
+    bottom: 76%;
+}
+
+form button {
+    float: left;
+    position: static;
+}
+
+.login_{
+    float: left;
+    width: 15%;
+    position: static;
+}
+
+.registr {
+    float: left;
+    width: 15%;
+    position: static;
+}
+.registr_h1 {
+    position: static;
+}
 /*Авторизация*/
 /*Таблица*/
 table.table-dark{

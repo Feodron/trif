@@ -1,12 +1,12 @@
 {% extends 'main/layout.html' %}
 
 {% block content %}
-    <h1>Register</h1>
-    <hr>
+    <h1 class="registr_h1">Регистрация</h1>
 
-    <form action="{% url 'register' %}" method="post">
-        {{ form }}
+    <hr>
+    <form action="{% url 'register' %}" method="post" class="registr">
         {% csrf_token %}
-    <button type="submit" class="btn btn-success">submit</button>
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Регистрация</button>
     </form>
 {% endblock %}

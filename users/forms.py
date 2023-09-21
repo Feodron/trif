@@ -43,6 +43,18 @@ class UserCreationForm(DjangoUserCreationForm):
         max_length=254,
         widget=forms.EmailInput(attrs={"autocomplete": "email"}),
     )
+    username = forms.CharField(
+        label=_("Логин"),
+        widget=forms.TextInput(attrs={'class': 'form-input'}),
+    )
+    password1 = forms.CharField(
+        label=_("Пароль"),
+        widget=forms.PasswordInput(attrs={'class': 'form-input'}),
+    )
+    password2 = forms.CharField(
+        label=_("Повтор пароля"),
+        widget=forms.PasswordInput(attrs={'class': 'form-input'}),
+    )
 
     class Meta(DjangoUserCreationForm.Meta):
         model = User
