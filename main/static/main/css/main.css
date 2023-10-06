@@ -380,12 +380,17 @@ ul.errorlist {
     margin-right:-220px;
     overflow:hidden;
 }
-
+.product-list{
+    position: absolute;
+    top: 30%;
+    right: -20%;
+}
 .product-list .item {
     margin-bottom: 40px;
     width: 30%;
     float: left;
     text-align: left;
+    top: 50%;
 }
 
 .product-detail {
@@ -522,3 +527,6 @@ form div.field {
     width: 20px;
 }
 /*Сетка*/
+.features p{
+
+}

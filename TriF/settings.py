@@ -35,6 +35,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Application definition
 
 INSTALLED_APPS = [
+    'orders',
     'shop',
     'cart',
     'users',

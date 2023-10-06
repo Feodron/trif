@@ -10,6 +10,7 @@ urlpatterns = [
     path('posts/', include('posts.urls')),
     path('users/', include('users.urls')),
     path('shop/', include('shop.urls', namespace='shop')),
+    path('orders/', include('orders.urls')),
     re_path(
         r"^static/(?P<path>.*)$",
         serve,
