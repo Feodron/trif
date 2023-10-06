@@ -3,7 +3,11 @@
 {% block title %}Спасибо за покупку{% endblock %}
 
 {% block content %}
-    <h1>Thank you</h1>
+    <h1>Спасибо за покупку</h1>
     <p>Ваш заказ успешно завершен
         <strong>{{ order.id }}</strong>.</p>
+    {% if qr_image %}
+        <h4>Ваш QR код:</h4>
+        <img src="/media/qr/test.png">
+    {% endif %}    
 {% endblock %}
